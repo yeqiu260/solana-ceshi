@@ -1,0 +1,18 @@
+[toolchain]
+package_manager = "npm"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+stream_pay = "Etsz3vqLMqfPToiVB1ECb2aCM1swRSaa9XLi6boH38uL"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "ts-mocha -p ./tsconfig.json tests/**/*.ts"
+
+[hooks]
